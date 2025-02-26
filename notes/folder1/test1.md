@@ -1,3 +1,5 @@
-# This is a test note file
-
-i hope this works
+---
+title: TEST1
+layout: template
+filename: test1.md
+---
