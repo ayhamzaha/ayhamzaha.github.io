@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Home"
+title: "Ayham Zahabi"
 ---
 
 <div class="intro">
