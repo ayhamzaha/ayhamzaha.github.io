@@ -1,11 +1,21 @@
-# Welcome msg goes here
+---
+layout: default
+title: "Home"
+---
 
-## Who
+<div class="intro">
+  <h1>Hi, I'm Ayham Zahabi</h1>
+  <p>I’m a Computer Engineer passionate about embedded systems, robotics, and web tech.</p>
+</div>
 
-give a brief description of myself and some things about me
-
-## Why
-
-this area should explain why this page is created and what my goals are with it
-
-[Notes](https://ayhamzaha.github.io/notes/landingPage)
+<h2>Projects</h2>
+<div class="card-grid">
+  {% for post in site.posts %}
+    <a href="{{ post.url | relative_url }}" class="card">
+      <img src="{{ post.thumbnail | relative_url }}" alt="Thumbnail">
+      <div class="card-content">
+        <h3>{{ post.title }}</h3>
+      </div>
+    </a>
+  {% endfor %}
+</div>
