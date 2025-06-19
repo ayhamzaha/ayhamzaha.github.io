@@ -1,27 +1,36 @@
 ---
 layout: default
-title: "Ayham Zahabi"
+title: Ayham Zahabi
 ---
 
-<div class="intro">
-  <h1>Hi, I'm Ayham Zahabi</h1>
-  <p>I’m a Computer Engineer passionate about embedded systems, robotics, and electronics.</p>
-</div>
+<div class="landing-container">
+  <header class="intro">
+    <h2>Ayham Zahabi</h2>
+    <p>computer engineer passionate about embedded systems and robotics</p>
+  </header>
 
-## About Me
+  <section class="about">
+    <h3>About me</h3>
+    <p>
+      bgjbf... (your paragraph text goes here).<br>
+      More about your background, interests, and goals.
+    </p>
+  </section>
 
-write stuff here about yourself, accomplishments, experiences, etc.
-
-<h2>Projects</h2>
-<div class="card-grid">
-  {% for post in site.posts %}
-    <a href="{{ post.url | relative_url }}" class="card">
-      <img src="{{ post.thumbnail | relative_url }}" alt="Thumbnail">
-      <div class="card-content">
-        <h3>{{ post.title }}</h3>
+  <section class="projects">
+    <h3>Projects</h3>
+    <div class="project-grid">
+      {% for project in site.data.projects %}
+      <div class="project-card">
+        <img src="{{ project.image | relative_url }}" alt="project image">
+        <div class="project-title">{{ project.title }}</div>
       </div>
-    </a>
-  {% endfor %}
-</div>
+      {% endfor %}
+    </div>
+  </section>
 
-<footer>Contact me: email here, linkedin here</footer>
+  <footer class="contact">
+    <p>contact me @ <a href="mailto:youremail@example.com">email</a>, 
+    <a href="https://www.linkedin.com/in/your-profile">linkedin</a></p>
+  </footer>
+</div>
